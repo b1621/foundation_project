@@ -1,16 +1,13 @@
-
+import Navigation from './components/Navigation';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="containe border p-8 m-10">
-      <h2>Hello world</h2>
-      <p className="text-3xl text-gray-700 font-bold mb-5">
-        Welcome!
-      </p>
-      <p className="text-gray-500 text-lg">
-        React and Tailwind CSS in action
-      </p>
+    <div className="container border m-auto">
+    <Navigation/>
+    
+     <Home/>
     </div>
   );
 }

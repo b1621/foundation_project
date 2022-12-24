@@ -1,11 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
+import Contact from './Home/Contact';
 import DemoAbout from './Home/DemoAbout';
 
 function Home() {
   return (
     <div class="flex flex-col w-full ">
-      <div class="w-full h-[580px] bg-hero bg-center bg-no-repeat bg-cover bg-black">
+      <div class="w-full h-[640px] bg-hero bg-center bg-no-repeat bg-cover bg-black">
         <div
           className="bg-gray-900 bg-opacity-50 text-center"
           style={{ width: '100%', height: '100%' }}
@@ -26,6 +27,7 @@ function Home() {
           </div>
         </div>
         <DemoAbout />
+        <Contact />
         <div class="p-10 w-full h-[500px] bg-blue-700">Some content</div>
         <div class="p-10 w-full h-[500px] bg-green-500">Some content</div>
         <div class="mt-auto">

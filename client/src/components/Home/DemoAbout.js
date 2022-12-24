@@ -2,21 +2,21 @@ import React from 'react';
 
 function DemoAbout() {
   return (
-    <div id="about">
-      <div className="border border-gray-300 w-[650px] mx-auto py-6 text-center">
-        <h2 className="text-4xl">
+    <div id="about" className="min-h-[500px] flex items-center">
+      <div className=" w-[710px] mx-auto mb-6 text-center text-slate-700">
+        <h2 className="text-4xl mb-4">
           Join the most ambitious health campaign in history
         </h2>
-        <p>
+        <p className="my-3">
           We are raising for Eye concer to bring world-leading cancer care
           closer to home
         </p>
         <div>
-          <button className="bg-green-500 duration-500  font-[poppins] text-white  py-3 px-10 hover:bg-green-600 rounded mt-3">
+          <button className="bg-green-500 transition-all ease-in duration-700  font-[poppins] text-white  py-3 px-10 hover:bg-transparent hover:border hover:border-green-500 hover:text-green-500 rounded mt-3 mr-10">
             Donate Now!
           </button>
-          <button className="bg-green-500 duration-500  font-[poppins] text-white  py-3 px-10 hover:bg-green-600 rounded mt-3">
-            Donate Now!
+          <button className="border border-green-500 transition-all ease-in duration-700  font-[poppins] text-green-500  py-3 px-10 hover:bg-green-500 hover:text-white rounded mt-3">
+            Reed More!
           </button>
         </div>
       </div>

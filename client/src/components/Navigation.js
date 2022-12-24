@@ -1,23 +1,92 @@
-import React from "react";
+import React, { useState } from 'react';
 
-function Navigation() {
-  let navList = ["Home", "About", "Contact Us"].map((nav) => {
-    return <p className="mx-2"> {nav} </p>;
-  });
+const navData = [
+  {
+    name: 'Home',
+    href: '/',
+  },
+  {
+    name: 'About',
+    href: '#about',
+  },
+  {
+    name: 'Projects',
+    href: '/projects',
+  },
+  {
+    name: 'Contact',
+    href: '/contact',
+  },
+];
+function Sample2() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="container border p-3 flex justify-between">
-      <div>
-        <h3 className=" text-slate-700 text-xl">Navigation</h3>
-      </div>
-
-      <div className="flex">{navList}</div>
-      <div>
-        <button className="border border-green-800 px-2 rounded-sm">
-          Donate
-        </button>
-      </div>
+    <div className="relative mb-10">
+      <nav
+        className="w-full shadow bg-white z-20 fixed top-0 right-0 left-0"
+        style={{ 'box-shadow': 'rgba(0, 0, 0, 0.1) 0px 4px 12px ' }}
+      >
+        <div className="flex justify-between items-center">
+          <div className="container mx-auto py-3 flex justify-between items-center">
+            <span className="cursor-pointer text-2xl text-slate-700">
+              <img
+                src="./images/a-website-favicon-color.png"
+                className="h-10 inline"
+                alt="icon"
+              />
+              Foundation
+            </span>
+            <nav className="hidden md:flex space-x-12 items-center transition-all ease-in duration-500 mx-3">
+              {navData.map((n) => {
+                return (
+                  <a
+                    key={n.name}
+                    href={n.href}
+                    className="hover:text-green-500 duration-500 text-slate-800"
+                  >
+                    {n.name}
+                  </a>
+                );
+              })}
+              <button className="bg-green-500 duration-500  font-[poppins] text-white  py-3 px-10 hover:bg-green-600 rounded">
+                Donate
+              </button>
+            </nav>
+          </div>
+          <div>
+            <span
+              className="text-3xl cursor-pointer mx-2 md:hidden block"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <ion-icon name={isOpen ? 'menu' : 'close'}></ion-icon>
+            </span>
+          </div>
+        </div>
+        <div className="md:hidden flex justify-between items-center transition-all ease-in duration-500">
+          {isOpen ? (
+            <div className="transition-all ease-in duration-500"></div>
+          ) : (
+            <div className="w-full ">
+              <nav className="flex flex-col ">
+                {navData.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="py-2 px-4 border-b border-gray-200 hover:bg-slate-100"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+                <button className="bg-green-500 duration-500  font-[poppins] text-white py-2 px-6 hover:bg-green-600 rounded">
+                  Donate
+                </button>
+              </nav>
+            </div>
+          )}
+        </div>
+      </nav>
     </div>
   );
 }
 
-export default Navigation;
+export default Sample2;

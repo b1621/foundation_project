@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('../public/images/pexels-rodnae-productions-8499593.jpg')",
+        sample: "url('../public/images/pexels-rodnae-productions-8083825.jpg')",
       },
     },
   },

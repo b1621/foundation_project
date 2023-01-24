@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
-import Contact from './Home/Contact';
+import Contactus from './Home/Contactus';
+import RecentBlog from './Home/RecentBlog';
 import DemoAbout from './Home/DemoAbout';
 
 function Home() {
@@ -27,12 +28,13 @@ function Home() {
           </div>
         </div>
         <DemoAbout />
-        <Contact />
-        <div class="p-10 w-full h-[500px] bg-blue-700">Some content</div>
-        <div class="p-10 w-full h-[500px] bg-green-500">Some content</div>
-        <div class="mt-auto">
+        <RecentBlog />
+        <Contactus />
+
+        <Footer />
+        {/* <div class="mt-auto">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );

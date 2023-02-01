@@ -6,8 +6,8 @@ import DemoAbout from './Home/DemoAbout';
 
 function Home() {
   return (
-    <div class="flex flex-col w-full ">
-      <div class="w-full h-[640px] bg-hero bg-center bg-no-repeat bg-cover bg-black">
+    <div className="flex flex-col w-full ">
+      <div className="w-full h-[640px] bg-hero bg-center bg-no-repeat bg-cover bg-black">
         <div
           className="bg-gray-900 bg-opacity-50 text-center"
           style={{ width: '100%', height: '100%' }}

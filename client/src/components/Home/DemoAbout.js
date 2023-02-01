@@ -12,8 +12,8 @@ function DemoAbout() {
           closer to home
         </p>
         <div>
-          <button className="bg-green-500 transition-all ease-in duration-700  font-[poppins] text-white  py-3 px-10 hover:bg-transparent hover:border hover:border-green-500 hover:text-green-500 rounded mt-3 mr-10">
-            Donate Now!
+          <button className="bg-green-500 transition-all ease-in duration-700  font-[poppins] text-white  py-3 px-10 hover:bg-green-700 hover:border hover:border-green-700  rounded mt-3 mr-10">
+            Join Us!
           </button>
           <button className="border border-green-500 transition-all ease-in duration-700  font-[poppins] text-green-500  py-3 px-10 hover:bg-green-500 hover:text-white rounded mt-3">
             Reed More!

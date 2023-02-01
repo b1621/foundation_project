@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 const navData = [
   {
     name: 'Home',
@@ -7,24 +7,24 @@ const navData = [
   },
   {
     name: 'About',
-    href: '#about',
+    href: '/about',
   },
   {
-    name: 'Projects',
-    href: '/projects',
+    name: 'Blogs',
+    href: '/Blogs',
   },
   {
     name: 'Contact',
-    href: '#contact',
+    href: '/contact',
   },
 ];
 function Sample2() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="relative mb-10">
+    <div className="sticky top-0 z-30">
       <nav
-        className="w-full shadow bg-white z-20 fixed top-0 right-0 left-0"
-        style={{ 'box-shadow': 'rgba(0, 0, 0, 0.1) 0px 4px 12px ' }}
+        className="w-full shadow bg-white "
+        style={{ boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px ' }}
       >
         <div className="flex justify-between items-center">
           <div className="container mx-auto py-3 flex justify-between items-center">
@@ -39,13 +39,13 @@ function Sample2() {
             <nav className="hidden md:flex space-x-12 items-center transition-all ease-in duration-500 mx-3">
               {navData.map((n) => {
                 return (
-                  <a
+                  <Link
                     key={n.name}
-                    href={n.href}
+                    to={n.href}
                     className="hover:text-green-500 duration-500 text-slate-800"
                   >
                     {n.name}
-                  </a>
+                  </Link>
                 );
               })}
               <button className="bg-green-500 duration-500  font-[poppins] text-white  py-3 px-10 hover:bg-green-600 rounded">

@@ -24,15 +24,21 @@ function Footer() {
             <div className="mx-10">
               <p className="text-2xl mb-3">Contact Information</p>
               <p className="flex flex-row">
-                <BsTelephone className="text-green-500 mt-2" />{' '}
+                <span className="text-green-500 mt-2">
+                  <BsTelephone />{' '}
+                </span>
                 <span className="px-2 ">0945622031</span>
               </p>
               <p className="flex flex-row my-2">
-                <AiOutlineMail className="text-green-500 mt-2" />{' '}
+                <span className="text-green-500 mt-2">
+                  <AiOutlineMail />{' '}
+                </span>
                 <span className="px-2 ">demo@email.com</span>
               </p>
               <p className="flex flex-row  align-bottom">
-                <CiLocationOn className="text-green-500 mt-2" />{' '}
+                <span className="text-green-500 mt-2">
+                  <CiLocationOn />{' '}
+                </span>
                 <span className="px-2 ">Ethiopia, Addis Ababa</span>
               </p>
             </div>

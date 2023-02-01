@@ -10,7 +10,7 @@ function Home() {
       <div className="w-full h-[640px] bg-hero bg-center bg-no-repeat bg-cover bg-black">
         <div
           className="bg-gray-900 bg-opacity-50 text-center"
-          style={{ width: '100%', height: '100%' }}
+          // style={{ width: '100%', height: '100%' }}
         >
           <div className=" w-full ">
             <div className="h-[632px] flex flex-col items-center justify-center relative mx-auto">

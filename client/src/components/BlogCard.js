@@ -3,15 +3,15 @@ import React from 'react';
 function BlogCard({ id, title, author, content, date }) {
   return (
     <div>
-      {/* <div className="border w-64 p-7"> */}
-      {/* <h4>{title}</h4> */}
-      {/* <p>{author}</p> */}
-      {/* <p>{date}</p> */}
-      {/* <p>{content}</p> */}
-      {/* <button>Read More</button> */}
-      {/* </div> */}
+      <div className="border w-64 p-7">
+        <h4>{title}</h4>
+        <p>{author}</p>
+        <p>{date}</p>
+        <p>{content}</p>
+        <button>Read More</button>
+      </div>
 
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
+      {/* <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
         <a href="#">
           <img
             class="rounded-t-lg"
@@ -49,7 +49,7 @@ function BlogCard({ id, title, author, content, date }) {
             </svg>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -8,7 +8,7 @@ function ContactDemo() {
           Contact Us
         </h2>
 
-        <form action="#" className="space-y-8">
+        <form className="space-y-8">
           <div>
             <label
               htmlFor="subject"

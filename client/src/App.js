@@ -6,7 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Blogs from './components/Blogs';
 import Page404 from './components/Page404';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

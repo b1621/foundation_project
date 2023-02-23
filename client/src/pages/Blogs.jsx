@@ -1,7 +1,7 @@
 import React from 'react';
 import { sampleBlog } from '../sampleData/sampleBlog';
-import BlogCard from './BlogCard';
-import Footer from './Footer';
+import BlogCard from '../components/BlogCard';
+import Footer from '../components/Footer';
 
 function Blogs() {
   return (

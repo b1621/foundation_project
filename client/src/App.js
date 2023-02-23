@@ -1,13 +1,13 @@
 import './App.css';
-import Home from './components/Home';
+import Home from './pages/Home';
 // import Footer from './components/Footer';
 import Navigation from './components/Navigation';
-import About from './components/About';
-import Contact from './components/Contact';
-import Blogs from './components/Blogs';
-import Page404 from './components/Page404';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Blogs from './pages/Blogs';
+import Page404 from './pages/Page404';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Volunteer from './components/Volunteer';
+import Volunteer from './pages/Volunteer';
 
 function App() {
   return (

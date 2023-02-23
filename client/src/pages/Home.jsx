@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
-import Contactus from './Home/Contactus';
-import RecentBlog from './Home/RecentBlog';
-import DemoAbout from './Home/DemoAbout';
+import Footer from '../components/Footer';
+import Contactus from '../components/Home/Contactus';
+import RecentBlog from '../components/Home/RecentBlog';
+import DemoAbout from '../components/Home/DemoAbout';
 
 function Home() {
   return (

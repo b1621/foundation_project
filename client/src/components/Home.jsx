@@ -27,14 +27,12 @@ function Home() {
             </div>
           </div>
         </div>
+
         <DemoAbout />
         <RecentBlog />
         <Contactus />
 
         <Footer />
-        {/* <div class="mt-auto">
-          <Footer />
-        </div> */}
       </div>
     </div>
   );

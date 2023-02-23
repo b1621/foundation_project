@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Blogs from './components/Blogs';
 import Page404 from './components/Page404';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Volunteer from './components/Volunteer';
 
 function App() {
   return (
@@ -14,12 +15,12 @@ function App() {
       <Router>
         <div>
           <Navigation />
-          {/* <Home /> */}
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
-            <Route exact path="/Blogs" element={<Blogs />}></Route>
+            <Route exact path="/blogs" element={<Blogs />}></Route>
+            <Route exact path="/volunteer" element={<Volunteer />}></Route>
             <Route exact path="*" element={<Page404 />}></Route>
           </Routes>
         </div>

@@ -11,7 +11,11 @@ const navData = [
   },
   {
     name: 'Blogs',
-    href: '/Blogs',
+    href: '/blogs',
+  },
+  {
+    name: 'Volunteer',
+    href: '/volunteer',
   },
   {
     name: 'Contact',

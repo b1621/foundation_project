@@ -19,7 +19,7 @@ function ContactDemo() {
             <input
               type="text"
               id="subject"
-              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 shadow-sm focus:shadow-md focus:outline-none"
+              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-sm border border-gray-300  focus:outline-none"
               placeholder="Abebe Kebede"
               required
             />
@@ -34,7 +34,7 @@ function ContactDemo() {
             <input
               type="email"
               id="email"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:shadow-lg block w-full p-2.5 focus:outline-none"
+              className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none"
               placeholder="name@gmail.com"
               required
             />
@@ -49,8 +49,8 @@ function ContactDemo() {
             <textarea
               id="message"
               rows="6"
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:shadow-md focus:outline-none "
-              placeholder="Message..."
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-sm border border-gray-300 focus:outline-none "
+              placeholder="Message ..."
             ></textarea>
           </div>
           <button className="bg-green-500 duration-500  font-[poppins] text-white  py-3 px-10 hover:bg-green-600 rounded mt-3">

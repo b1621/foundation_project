@@ -5,11 +5,11 @@ function About() {
   return (
     <div>
       <div className="min-h-screen">
-        <div className="font-serif w-9/12 mx-auto">
-          <div className=" p-24 text-center text-5xl font-bold leading-4">
+        <div className="font-serif w-9/12 mx-auto mb-36">
+          <div className=" p-24 text-center text-7xl font-bold leading-4">
             <h2>About Us</h2>
           </div>
-          <div className=" text-xl mb-10">
+          <div className=" text-2xl mb-10">
             <p className="py-2">
               Welcome to Eye Cancer Foundation, a non-profit startup
               organization dedicated to raising awareness about eye cancer and

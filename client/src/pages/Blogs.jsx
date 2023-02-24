@@ -8,7 +8,9 @@ function Blogs() {
     <div>
       <div className="min-h-screen">
         <div className="border mx-auto w-[1050px]">
-          <h2 className="text-2xl text-center py-4">blogs</h2>
+          <div className=" p-24 text-center text-7xl font-bold leading-4">
+            <h2>Blogs</h2>
+          </div>
 
           <div className="flex flex-row justify-between flex-wrap">
             {sampleBlog.map((blog) => {
